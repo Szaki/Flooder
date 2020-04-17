@@ -3,7 +3,7 @@ import random
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-ho", "--http-only", action='store_true',
+parser.add_argument("-ho", "--http-only", action='store_false',
                     help="Look for files in subdirectories.")
 parser.add_argument(
     "ip", type=str, help="The IP address of the host to be flooded.")
