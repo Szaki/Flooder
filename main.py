@@ -1,6 +1,5 @@
 import socket
 import random
-import sys
 import argparse
 
 parser = argparse.ArgumentParser()
